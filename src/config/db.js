@@ -12,7 +12,7 @@ const pool = mysql.createPool({
   }
 });
 
-export const initDbConnection = async () => {
+export const testDbConnection = async () => {
   try {
     const connection = await pool.getConnection();
     console.log('Database connected successfully!');
